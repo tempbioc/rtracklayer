@@ -1,5 +1,4 @@
-Installing package into '/home/biocbuild/bbs-3.19-bioc/R/site-library'
-(as 'lib' is unspecified)
+* installing to library '/home/biocbuild/bbs-3.19-bioc/R/site-library'
 * installing *source* package 'rtracklayer' ...
 ** using staged installation
 checking for pkg-config... /usr/bin/pkg-config
@@ -246,6 +245,4 @@ Creating a generic function for 'offset' from package 'stats' in package 'rtrack
 ** checking absolute paths in shared objects and dynamic libraries
 ** testing if installed package can be loaded from final location
 ** testing if installed package keeps a record of temporary installation path
-* creating tarball
-packaged installation of 'rtracklayer' as 'rtracklayer_1.63.0_R_x86_64-pc-linux-gnu.tar.gz'
 * DONE (rtracklayer)
