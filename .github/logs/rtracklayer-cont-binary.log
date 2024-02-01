@@ -1,0 +1,251 @@
+Installing package into '/home/biocbuild/bbs-3.19-bioc/R/site-library'
+(as 'lib' is unspecified)
+* installing *source* package 'rtracklayer' ...
+** using staged installation
+checking for pkg-config... /usr/bin/pkg-config
+checking pkg-config is at least version 0.9.0... yes
+checking for OPENSSL... yes
+configure: creating ./config.status
+config.status: creating src/Makevars
+** libs
+using C compiler: 'gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0'
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c S4Vectors_stubs.c -o S4Vectors_stubs.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c IRanges_stubs.c -o IRanges_stubs.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c XVector_stubs.c -o XVector_stubs.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c R_init_rtracklayer.c -o R_init_rtracklayer.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c readGFF.c -o readGFF.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c bbiHelper.c -o bbiHelper.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c bigWig.c -o bigWig.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c bigBedHelper.c -o bigBedHelper.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c bigBed.c -o bigBed.o
+bigBed.c: In function 'BBDFile_write':
+bigBed.c:338:10: warning: variable 'extraIndexListEndOffset' set but not used [-Wunused-but-set-variable]
+  338 |   bits64 extraIndexListEndOffset = 0;
+      |          ^~~~~~~~~~~~~~~~~~~~~~~
+bigBed.c: In function 'BBDFile_query':
+bigBed.c:226:22: warning: 'typeId' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  226 |         switch(typeId[efIndex]) {
+      |                      ^
+bigBed.c:236:13: warning: 'lengthIndex' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  236 |             INTEGER(lengthIndex)[efIndex] = index + 1;
+      |             ^~~~~~~~~~~~~~~~~~~~
+bigBed.c:218:7: warning: 'blocks' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  218 |       SET_VECTOR_ELT(blocks, i, new_IRanges("IRanges", bstart, bwidth, R_NilValue));
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bigBed.c:209:7: warning: 'itemRgb' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  209 |       SET_STRING_ELT(itemRgb, i, mkChar(rgbBuf));
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bigBed.c:204:7: warning: 'thickWidth' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  204 |       INTEGER(thickWidth)[i] = bed->thickEnd - bed->thickStart + 1;
+      |       ^~~~~~~~~~~~~~~~~~~
+bigBed.c:205:7: warning: 'thickStart' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  205 |       INTEGER(thickStart)[i] = bed->thickStart;
+      |       ^~~~~~~~~~~~~~~~~~~
+bigBed.c:198:7: warning: 'score' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  198 |       INTEGER(score)[i] = bed->score;
+      |       ^~~~~~~~~~~~~~
+bigBed.c:257:5: warning: 'name' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  257 |     SET_VECTOR_ELT(ans, index++, name);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c chain_io.c -o chain_io.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c twoBit.c -o twoBit.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c handlers.c -o handlers.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c utils.c -o utils.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/memgfx.c -o ucsc/memgfx.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/binRange.c -o ucsc/binRange.o
+ucsc/binRange.c:49:12: warning: 'binFromRangeExtended' defined but not used [-Wunused-function]
+   49 | static int binFromRangeExtended(int start, int end)
+      |            ^~~~~~~~~~~~~~~~~~~~
+ucsc/binRange.c:28:12: warning: 'binFromRangeStandard' defined but not used [-Wunused-function]
+   28 | static int binFromRangeStandard(int start, int end)
+      |            ^~~~~~~~~~~~~~~~~~~~
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/htmlColor.c -o ucsc/htmlColor.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/sqlList.c -o ucsc/sqlList.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/tokenizer.c -o ucsc/tokenizer.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/asParse.c -o ucsc/asParse.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/basicBed.c -o ucsc/basicBed.o
+In file included from /usr/include/string.h:535,
+                 from ucsc/common.h:33,
+                 from ucsc/basicBed.c:14:
+In function 'strncpy',
+    inlined from 'bedParseRgb' at ucsc/basicBed.c:449:1:
+/usr/include/x86_64-linux-gnu/bits/string_fortified.h:95:10: warning: '__builtin_strncpy' specified bound 64 equals destination size [-Wstringop-truncation]
+   95 |   return __builtin___strncpy_chk (__dest, __src, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   96 |                                   __glibc_objsize (__dest));
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/bigBed.c -o ucsc/bigBed.o
+ucsc/bigBed.c:326:31: warning: 'bigBedIntervalsMatchingName' defined but not used [-Wunused-function]
+  326 | static struct bigBedInterval *bigBedIntervalsMatchingName(struct bbiFile *bbi,
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+ucsc/bigBed.c:311:16: warning: 'bbWordIsInHash' defined but not used [-Wunused-function]
+  311 | static boolean bbWordIsInHash(char *line, int fieldIx, void *target)
+      |                ^~~~~~~~~~~~~~
+ucsc/bigBed.c:301:16: warning: 'bbWordMatchesName' defined but not used [-Wunused-function]
+  301 | static boolean bbWordMatchesName(char *line, int fieldIx, void *target)
+      |                ^~~~~~~~~~~~~~~~~
+ucsc/bigBed.c:252:31: warning: 'bigBedChunksMatchingNames' defined but not used [-Wunused-function]
+  252 | static struct fileOffsetSize *bigBedChunksMatchingNames(struct bbiFile *bbi,
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~
+ucsc/bigBed.c:241:31: warning: 'bigBedChunksMatchingName' defined but not used [-Wunused-function]
+  241 | static struct fileOffsetSize *bigBedChunksMatchingName(struct bbiFile *bbi,
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~
+ucsc/bigBed.c:150:28: warning: 'bigBedCoverageIntervals' defined but not used [-Wunused-function]
+  150 | static struct bbiInterval *bigBedCoverageIntervals(struct bbiFile *bbi,
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/bPlusTree.c -o ucsc/bPlusTree.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/bbiRead.c -o ucsc/bbiRead.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/bbiWrite.c -o ucsc/bbiWrite.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/bwgCreate.c -o ucsc/bwgCreate.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/bwgQuery.c -o ucsc/bwgQuery.o
+ucsc/bwgQuery.c: In function 'bigWigIntervalQuery':
+ucsc/bwgQuery.c:164:25: warning: variable 'blockEnd' set but not used [-Wunused-but-set-variable]
+  164 |         char *blockPt, *blockEnd;
+      |                         ^~~~~~~~
+At top level:
+ucsc/bwgQuery.c:47:12: warning: 'bigWigBlockDumpIntersectingRange' defined but not used [-Wunused-function]
+   47 | static int bigWigBlockDumpIntersectingRange(boolean isSwapped, char *blockPt, char *blockEnd,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/cirTree.c -o ucsc/cirTree.o
+ucsc/cirTree.c:530:13: warning: 'rEnumerateBlocks' defined but not used [-Wunused-function]
+  530 | static void rEnumerateBlocks(struct cirTreeFile *crt, int level, bits64 indexFileOffset,
+      |             ^~~~~~~~~~~~~~~~
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/common.c -o ucsc/common.o
+ucsc/common.c:1971:13: warning: 'dateAdd' defined but not used [-Wunused-function]
+ 1971 | static void dateAdd(struct tm *tp,int addYears,int addMonths,int addDays)
+      |             ^~~~~~~
+ucsc/common.c:1901:14: warning: 'emptyStr' defined but not used [-Wunused-variable]
+ 1901 | static char *emptyStr = "";
+      |              ^~~~~~~~
+ucsc/common.c:1900:14: warning: 'naStr' defined but not used [-Wunused-variable]
+ 1900 | static char *naStr = "n/a";
+      |              ^~~~~
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/dnaseq.c -o ucsc/dnaseq.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/dnautil.c -o ucsc/dnautil.o
+ucsc/dnautil.c:521:12: warning: 'findHeadPolyTMaybeMask' defined but not used [-Wunused-function]
+  521 | static int findHeadPolyTMaybeMask(DNA *dna, int size, boolean doMask,
+      |            ^~~~~~~~~~~~~~~~~~~~~~
+ucsc/dnautil.c:465:12: warning: 'findTailPolyAMaybeMask' defined but not used [-Wunused-function]
+  465 | static int findTailPolyAMaybeMask(DNA *dna, int size, boolean doMask,
+      |            ^~~~~~~~~~~~~~~~~~~~~~
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/errAbort.c -o ucsc/errAbort.o
+ucsc/errAbort.c: In function 'getThreadVars':
+ucsc/errAbort.c:255:5: warning: ignoring return value of 'write' declared with attribute 'warn_unused_result' [-Wunused-result]
+  255 |     write(STDERR_FILENO, errMsg, strlen(errMsg));
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+At top level:
+ucsc/errAbort.c:218:13: warning: 'warnAbortHandler' defined but not used [-Wunused-function]
+  218 | static void warnAbortHandler(char *format, va_list args)
+      |             ^~~~~~~~~~~~~~~~
+ucsc/errAbort.c:210:13: warning: 'debugAbort' defined but not used [-Wunused-function]
+  210 | static void debugAbort()
+      |             ^~~~~~~~~~
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/hash.c -o ucsc/hash.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/linefile.c -o ucsc/linefile.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/localmem.c -o ucsc/localmem.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/sqlNum.c -o ucsc/sqlNum.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/zlibFace.c -o ucsc/zlibFace.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/dystring.c -o ucsc/dystring.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/hmmstats.c -o ucsc/hmmstats.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/obscure.c -o ucsc/obscure.o
+ucsc/obscure.c:14:12: warning: '_dotForUserMod' defined but not used [-Wunused-variable]
+   14 | static int _dotForUserMod = 100; /* How often does dotForUser() output a dot. */
+      |            ^~~~~~~~~~~~~~
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/pipeline.c -o ucsc/pipeline.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/rangeTree.c -o ucsc/rangeTree.o
+ucsc/rangeTree.c:36:14: warning: 'sumInt' defined but not used [-Wunused-function]
+   36 | static void *sumInt(void *a, void *b)
+      |              ^~~~~~
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/rbTree.c -o ucsc/rbTree.o
+ucsc/rbTree.c:680:13: warning: 'addRefWithContext' defined but not used [-Wunused-function]
+  680 | static void addRefWithContext(void *item, void *context)
+      |             ^~~~~~~~~~~~~~~~~
+ucsc/rbTree.c:674:13: warning: 'addRef' defined but not used [-Wunused-function]
+  674 | static void addRef(void *item)
+      |             ^~~~~~
+ucsc/rbTree.c:576:13: warning: 'rTreeDump' defined but not used [-Wunused-function]
+  576 | static void rTreeDump(struct rbTreeNode *n)
+      |             ^~~~~~~~~
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/memalloc.c -o ucsc/memalloc.o
+ucsc/memalloc.c:357:14: warning: 'memTrackerRealloc' defined but not used [-Wunused-function]
+  357 | static void *memTrackerRealloc(void *vpt, size_t size)
+      |              ^~~~~~~~~~~~~~~~~
+ucsc/memalloc.c:348:13: warning: 'memTrackerFree' defined but not used [-Wunused-function]
+  348 | static void memTrackerFree(void *vpt)
+      |             ^~~~~~~~~~~~~~
+ucsc/memalloc.c:314:26: warning: 'carefulMemHandler' defined but not used [-Wunused-variable]
+  314 | static struct memHandler carefulMemHandler =
+      |                          ^~~~~~~~~~~~~~~~~
+ucsc/memalloc.c:220:13: warning: 'carefulMemInit' defined but not used [-Wunused-function]
+  220 | static void carefulMemInit(size_t maxToAlloc)
+      |             ^~~~~~~~~~~~~~
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/dlist.c -o ucsc/dlist.o
+ucsc/dlist.c:124:12: warning: 'dlNodeCmp' defined but not used [-Wunused-function]
+  124 | static int dlNodeCmp(const void *elem1, const void *elem2)
+      |            ^~~~~~~~~
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/filePath.c -o ucsc/filePath.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/htmlPage.c -o ucsc/htmlPage.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/udc.c -o ucsc/udc.o
+ucsc/udc.c: In function 'djb2_hash':
+ucsc/udc.c:1070:12: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+ 1070 |     while (c = *str++)
+      |            ^
+At top level:
+ucsc/udc.c:1273:13: warning: 'qDecode' defined but not used [-Wunused-function]
+ 1273 | static void qDecode(const char *input, char *buf, size_t size)
+      |             ^~~~~~~
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/net.c -o ucsc/net.o
+ucsc/net.c: In function 'netConnectWithTimeout':
+ucsc/net.c:148:38: warning: passing argument 3 to 'restrict'-qualified parameter aliases with argument 4 [-Wrestrict]
+  148 |             res = select(sd+1, NULL, &mySet, &mySet, &tempTime);
+      |                                      ^~~~~~  ~~~~~~
+At top level:
+ucsc/net.c:303:13: warning: 'notGoodSubnet' defined but not used [-Wunused-function]
+  303 | static void notGoodSubnet(char *sns)
+      |             ^~~~~~~~~~~~~
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/bits.c -o ucsc/bits.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/twoBit.c -o ucsc/twoBit.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/_cheapcgi.c -o ucsc/_cheapcgi.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/internet.c -o ucsc/internet.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/https.c -o ucsc/https.o
+ucsc/https.c: In function 'openSslInit':
+ucsc/https.c:76:5: warning: 'ERR_load_SSL_strings' is deprecated: Since OpenSSL 3.0 [-Wdeprecated-declarations]
+   76 |     ERR_load_SSL_strings();
+      |     ^~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/openssl/sslerr.h:17,
+                 from /usr/include/openssl/ssl.h:43,
+                 from ucsc/https.c:8:
+/usr/include/openssl/sslerr_legacy.h:29:27: note: declared here
+   29 | OSSL_DEPRECATEDIN_3_0 int ERR_load_SSL_strings(void);
+      |                           ^~~~~~~~~~~~~~~~~~~~
+At top level:
+ucsc/https.c:27:13: warning: 'openssl_locking_callback' defined but not used [-Wunused-function]
+   27 | static void openssl_locking_callback(int mode, int n, const char * file, int line)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+ucsc/https.c:22:22: warning: 'openssl_id_callback' defined but not used [-Wunused-function]
+   22 | static unsigned long openssl_id_callback(void)
+      |                      ^~~~~~~~~~~~~~~~~~~
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/base64.c -o ucsc/base64.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/verbose.c -o ucsc/verbose.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/os.c -o ucsc/os.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/wildcmp.c -o ucsc/wildcmp.o
+gcc -I"/home/biocbuild/bbs-3.19-bioc/R/include" -DNDEBUG -DUSE_SSL -D_FILE_OFFSET_BITS=64 -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/S4Vectors/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/IRanges/include' -I'/home/biocbuild/bbs-3.19-bioc/R/site-library/XVector/include' -I/usr/local/include    -fpic  -g -O2  -Wall -c ucsc/_portimpl.c -o ucsc/_portimpl.o
+gcc -shared -L/home/biocbuild/bbs-3.19-bioc/R/lib -L/usr/local/lib -o rtracklayer.so S4Vectors_stubs.o IRanges_stubs.o XVector_stubs.o R_init_rtracklayer.o readGFF.o bbiHelper.o bigWig.o bigBedHelper.o bigBed.o chain_io.o twoBit.o handlers.o utils.o ucsc/memgfx.o ucsc/binRange.o ucsc/htmlColor.o ucsc/sqlList.o ucsc/tokenizer.o ucsc/asParse.o ucsc/basicBed.o ucsc/bigBed.o ucsc/bPlusTree.o ucsc/bbiRead.o ucsc/bbiWrite.o ucsc/bwgCreate.o ucsc/bwgQuery.o ucsc/cirTree.o ucsc/common.o ucsc/dnaseq.o ucsc/dnautil.o ucsc/errAbort.o ucsc/hash.o ucsc/linefile.o ucsc/localmem.o ucsc/sqlNum.o ucsc/zlibFace.o ucsc/dystring.o ucsc/hmmstats.o ucsc/obscure.o ucsc/pipeline.o ucsc/rangeTree.o ucsc/rbTree.o ucsc/memalloc.o ucsc/dlist.o ucsc/filePath.o ucsc/htmlPage.o ucsc/udc.o ucsc/net.o ucsc/bits.o ucsc/twoBit.o ucsc/_cheapcgi.o ucsc/internet.o ucsc/https.o ucsc/base64.o ucsc/verbose.o ucsc/os.o ucsc/wildcmp.o ucsc/_portimpl.o -lz -pthread -lssl -lcrypto -L/home/biocbuild/bbs-3.19-bioc/R/lib -lR
+installing to /home/biocbuild/bbs-3.19-bioc/R/site-library/00LOCK-rtracklayer/00new/rtracklayer/libs
+** R
+** data
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+Creating a generic function for 'offset' from package 'stats' in package 'rtracklayer'
+** help
+*** installing help indices
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+** checking absolute paths in shared objects and dynamic libraries
+** testing if installed package can be loaded from final location
+** testing if installed package keeps a record of temporary installation path
+* creating tarball
+packaged installation of 'rtracklayer' as 'rtracklayer_1.63.0_R_x86_64-pc-linux-gnu.tar.gz'
+* DONE (rtracklayer)
